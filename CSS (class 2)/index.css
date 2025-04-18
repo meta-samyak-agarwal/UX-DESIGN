@@ -1,0 +1,257 @@
+ body{
+    background-color: rgb(8, 8, 7);
+    color: white;
+ }
+
+ #nav {
+    position: fixed;
+    z-index: 1000;
+    width: 100%; /* Ensures the navbar spans the full width */
+    top: 0;
+}
+
+#nav-main{
+    background-color:  rgb(8, 8, 7);  
+    color: white; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem;
+}
+
+#logo {
+    font-size: 32px;  
+    font-weight: bold; 
+}
+
+#nav-links a {
+    color: white;  
+    text-decoration: none; /* Removes the underline from links */
+    margin: 0 10px; /* Adds space between links */
+}
+
+#nav-links a:hover {
+    color: #00bfff; /* Changes the link color when hovered */
+    text-decoration: underline; /* Underlines the link on hover */
+}
+ 
+
+#cover {
+    position: relative;
+    width: 100%;  
+    padding-top: 56.25%; /* Aspect ratio: 16:9 (height / width * 100) */
+    overflow: hidden;
+  }
+
+  #cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover; /* Ensures cropping */
+
+    object-position: bottom;
+  }
+
+
+
+
+  /* employee section  */
+
+  #employee {
+    text-align: center; /* Centers the heading */
+    margin-top: 20px;
+  }
+
+  #employee-main {
+    display: flex; /* Creates a flex layout */
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Aligns the items vertically */
+    gap: 200px; /* Space between the image and the form */
+    margin-top: 20px; /* Space between heading and content */
+  }
+
+  #employee-main img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 40%; /* Optional: adds rounded corners */
+  }
+
+  #employee-main form {
+    max-width: 300px; /* Sets a fixed width for the form */
+    text-align: left; /* Aligns the labels and inputs */
+  }
+
+  #employee-main form input,
+  #employee-main form select,
+  #employee-main form button {
+    width: 100%; /* Makes the inputs, dropdown, and button full width */
+    margin-bottom: 15px; /* Adds space between form elements */
+    padding: 8px; /* Adds padding for better appearance */
+    border-radius: 5px; /* Adds rounded corners */
+    border: 1px solid #ccc; /* Styles the border */
+    font-size: 14px; /* Adjusts font size */
+    background-color: black;
+    color: white;
+  }
+
+  #employee-main form button {
+    background-color: #94929a; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Adds a pointer cursor */
+  }
+
+  #employee-main form button:hover {
+    background-color: #0056b3; /* Changes color on hover */
+  }
+
+
+
+  /* vehicle */
+
+  #vehicle {
+    text-align: center; /* Centers the heading */
+    margin-top: 40px;
+  }
+
+  #vehicle-main {
+    display: flex; /* Creates a flex layout */
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Aligns the items vertically */
+    gap: 200px; /* Space between the image and the form */
+    margin-top: 20px; /* Space between heading and content */
+  }
+
+  #vehicle-main img {
+    width: 500px; /* Adjust the width as needed */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 100%; /* Optional: adds rounded corners */
+  }
+
+  #vehicle-main form {
+    max-width: 300px; /* Sets a fixed width for the form */
+    text-align: left; /* Aligns the labels and inputs */
+  }
+
+  #vehicle-main form input,
+  #vehicle-main form select,
+  #vehicle-main form button {
+    width: 100%; /* Makes the inputs, dropdown, and button full width */
+    margin-bottom: 15px; /* Adds space between form elements */
+    padding: 8px; /* Adds padding for better appearance */
+    border-radius: 5px; /* Adds rounded corners */
+    border: 1px solid #ccc; /* Styles the border */
+    font-size: 14px; /* Adjusts font size */
+    background-color: black;
+    color: white;
+  }
+
+  #vehicle-main form button {
+    background-color: #94929a; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Adds a pointer cursor */
+  }
+
+  #vehicle-main form button:hover {
+    background-color: #0056b3; /* Changes color on hover */
+  }
+
+
+
+  /* feedback */
+
+  #feedback {
+    text-align: center; /* Centers the heading */
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  #feedback-main {
+    display: flex; /* Creates a flex layout */
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Aligns the items vertically */
+    gap: 200px; /* Space between the image and the form */
+    margin-top: 50px; /* Space between heading and content */
+  }
+
+  #feedback-main img {
+    width: 250px; /* Adjust the width as needed */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 20%; /* Optional: adds rounded corners */
+  }
+
+  #feedback-main form {
+    max-width: 300px; /* Sets a fixed width for the form */
+    text-align: left; /* Aligns the labels and inputs */
+  }
+
+  #feedback-main form input,
+  #feedback-main form select,
+  #feedback-main form textarea,
+  #feedback-main form button {
+    width: 100%; /* Makes the inputs, dropdown, and button full width */
+    margin-bottom: 15px; /* Adds space between form elements */
+    padding: 8px; /* Adds padding for better appearance */
+    border-radius: 5px; /* Adds rounded corners */
+    border: 1px solid #ccc; /* Styles the border */
+    font-size: 14px; /* Adjusts font size */
+    background-color: black;
+    color: white;
+  }
+
+  #feedback-main form button {
+    background-color: #94929a; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Adds a pointer cursor */
+  }
+
+  #feedback-main form button:hover {
+    background-color: #0056b3; /* Changes color on hover */
+  }
+
+
+/* pricing */
+
+#pricing {
+    text-align: center; /* Centers the heading */
+    margin-top: 100px;
+  }
+
+
+#cards {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Aligns the items vertically */
+    gap: 150px; /* Space between the image and the form */
+    margin-top: 50px; /* Space between heading and content */
+}
+
+.pricing-item {
+    width: 100px;
+    padding: 20px;
+    
+    background-color: #0a0808;
+
+    border: 0.5px solid white; /* White border */
+    border-radius: 20px;
+}
+
+
+
+#price-circle {
+
+    width: 70px;
+    height: 70px;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% ;
+    margin: 0 auto 15px auto;
+    border: 0.5px solid white; /* White border */
+
+
+}
+
