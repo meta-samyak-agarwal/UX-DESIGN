@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* home page  */
+.homePage{
+    background-image: url("/Images/homebg.png");
+    background-size: cover; /* This makes the image cover the entire screen */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-position: center; /* This centers the image */
+}
+
+#navbar{
+    color: white; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 15px;
+}
+
+#nav-links a {
+    color: white;  
+    text-decoration: none; /* Removes the underline from links */
+    margin: 0 10px; /* Adds space between links */
+
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth zoom transition */
+}
+
+#nav-links a:hover {
+    transform: scale(1.1); /* Increase icon size by 20% on hover */
+}
+
+h1{
+    font-size: 48px;
+}
+
+#social-links a {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth zoom transition */
+}
+
+#social-links a:hover {
+    transform: scale(1.2); /* Increase icon size by 20% on hover */
+}
+
+#social-links a {
+    color: white;  
+    text-decoration: none; /* Removes the underline from links */
+    margin: 0 10px; /* Adds space between links */
+}
+
+#nav-bottom{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    
+}
+
+#left-text{
+    margin-top: 100px;
+    margin-left: 35px;
+    color: white;
+    font-weight: bold;
+
+}
+
+#buttons{
+    margin-left: 35px;
+    margin-top: 17px;
+}
+
+#right-part img{
+    transform: scale(0.7);
+
+}
+
+.download-btn{
+    background-color: #ff5722;
+    color: #fff;
+
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.feature-btn{
+    background-color: #2c5282;
+    color: #fff;
+
+
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#left-part button {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth zoom transition */
+}
+
+#left-part button:hover {
+    transform: scale(1.1); /* Increase icon size by 20% on hover */
+}
+
+
+
+
+/* feature page  */
+
+#featurePage{
+    background-image: url("/Images/bodybg.png");
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+
+.prefect h2{
+    color: rgba(82, 82, 187, 0.848);
+}
+.prefect h4{
+    margin-left: 25px;
+    color: grey;
+}
+ 
+#category{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    gap: 3em;
+    margin-top: 4em;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.data{
+    padding: 0.5rem;
+}
+
+.data p {
+    color: grey;
+}
+
+.item1{
+    display: flex;
+}
+
+#image-group{
+    display: flex;
+}
+
+.prefect{
+    margin-top: 60px;
+}
+
+
+.carousel{
+
+    margin-top: 100px;
+    /* position: relative; */
+    width: 100%;
+    max-width: 1100px;
+    height: 300px;
+    /* margin: 0 auto; */
+    perspective: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ 
+.card {
+    position: absolute;
+    width: 200px;
+    transition: all 0.5s ease;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+ .card img {
+    width: 200px;
+    height: auto;
+}
+
+.card-1{
+    transform: translateX(-350px) rotateY(40deg) scale(0.8);
+    z-index: 1;
+}
+
+.card-2{
+    transform: translateX(-180px) rotateY(25deg) scale(0.9);
+    z-index: 2;
+}
+
+.card-3{
+    transform: scale(1.05);
+    z-index: 5;
+}
+
+.card-4{
+    transform: translateX(180px) rotateY(-25deg) scale(0.9);
+    z-index: 2;
+}
+
+.card-5{
+    transform: translateX(350px) rotateY(-40deg) scale(0.8);
+    z-index: 1;
+} 
+
+
+ /* screenshot part  */
+
+ .ssPage{
+    background-image: url("/Images/bodybg.png");
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 120px;
+ }
+
+ .perfect h2{
+    color: rgb(92, 92, 184);
+ }
+
+ .perfect h4{
+    color: grey;
+ }
+
+ .section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    gap: 3em;
+    margin-top: 4em;
+    margin-left: 20rem;
+    margin-right: 10rem;
+ }
+
+ .leftPart img{
+    height: auto;
+    max-width: 200px;
+    transform: translate(-50%);
+    position: relative;
+    z-index: 1;
+ }
+
+ .leftPart{
+    position: relative;
+    display: inline-block;
+ }
+
+ #weatherName{
+    
+    color: grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%) rotate(90deg);
+    font-size: 140px;
+    color: rgba(0, 0, 0, 0.09);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+ }
+
+
+
+ .weatherInfo {
+    max-width: 350px;
+    text-align: left;
+    color: grey;
+  }
+
+  .heading{
+    font-size: 30px;
+
+  }
+
+  .perfect h2{
+    margin-left:8px;
+  }
+  
+  .description img {
+    width: 60px;
+    margin-bottom: 15px;
+  }
+ 
+  .rightPart{
+    align-items: center;
+  }
+ 
+
+
+  .leftPart2 img{
+    height: auto;
+    max-width: 200px;
+    transform: translate(-50%);
+    position: relative;
+    z-index: 1;
+ }
+
+ .leftPart2{
+    position: relative;
+    display: inline-block;
+ }
+
+
+ .rightPart2{
+    align-items: center;
+    margin-right: 150px;
+  }
+ 
+
+
+  /* reviews  */
+
+  #reviewPage{
+    background-image: url("/Images/bodybg.png");
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 120px;
+  }
+
+  #review-panel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    grid-template-rows: repeat(2, auto); /* Creates 2 rows */
+    gap: 60px; /* Adjust space between grid items */
+    padding: 20px 130px;
+    padding-bottom: 130px;
+    justify-items: center; /* Center items within each grid cell */
+    margin-top: 60px;
+}
+
+.review-tab {
+    position: relative;
+    font-size: 25px;
+    width: 500px;
+}
+
+.review-tab::before{
+    content: "“";
+    font-size: 90px;
+    position: absolute;
+    top: -60px;
+    color: #6388fb;
+}
+
+.review-tab::after{
+    content: "„";
+    position: absolute;
+    right: 9px;
+    bottom: -20px;
+    font-size: 90px;
+    color: #6388fb;
+}
+
+.prefect11 h2{
+    color: rgb(92, 92, 184);
+
+}
+
+.prefect11 h4{
+    color: grey;
+    margin-left: 100px;
+}
+ 
+.author{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* download section  */
+
+#download-section{
+    background: #6388fb;
+    position: relative;
+    height: 50vh;
+}
+
+#download-section>img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#download-section>#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    gap: 10%;
+}
+
+#container>#text-section{
+    width: 25%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 47px 0px;
+}
+
+#container>#text-section>span{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+#text-section>p{
+    font-weight: 500;
+    width: 90%;
+}
+
+#container>#img-section{
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+#container>#img-section>img{
+    height: 80%;
+}
+
+
+/* footer section  */
+footer{
+    height: 25vh;
+    width: 100%;
+    background: #383a53;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer>#nav-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer>#nav-section>#nav-tab{
+    display: flex;
+    gap: 20px;
+}
+
+#nav-tab>a{
+    text-decoration: none;
+    color: #dcdcdc;
+    padding: 2px;
+}
+
+#nav-section>#social{
+    display: flex;
+    gap: 13px;
+}
+
+#nav-section>#social>a{
+    padding: 4px;
+}
+
+#nav-section>#social img{
+    height: 20px;
+}
+
+footer>#bar{
+    width: 80vw;
+    height: 1px;
+    background: #585b84;
+}
+
+footer>div:nth-child(3){
+    color: grey;
+}
+
+ 
+ 
