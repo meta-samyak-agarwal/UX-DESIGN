@@ -1,0 +1,86 @@
+body {
+    background-color: #212529;
+}
+
+#signup-btn {
+    border: 0.5px solid rgb(118, 114, 114); /* Adjust width, style, and color */
+    color: rgba(118, 114, 114);
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 20px;  
+    text-align: center;
+  }
+
+  #signup-btn:hover{
+    background-color: rgb(185, 181, 181);
+    color: white;
+  }
+
+  .subscribe{
+    color:  rgb(118, 114, 114); /* Adjust width, style, and color */
+  }
+
+  .category{
+    margin-top: 10px;
+    border-top: 1px solid rgb(118, 114, 114);
+    border-bottom: 1px solid rgb(118, 114, 114);
+  }
+
+  .category div {
+    cursor: pointer;
+  }
+
+  .mainPage{
+    background-color: rgb(118, 114, 114);
+    margin-top: 16px;    
+  }
+
+  .mainpageinside{
+    color: white;
+  }
+
+  .mainpageinside h1{
+    font-weight: 500;
+  }
+
+.world{
+  color: rgb(76, 76, 211);
+}
+
+.design{
+  color: rgb(75, 180, 75);
+}
+
+.footer{
+    background-color: #2B3035;
+    color: #DEE2E6BF;
+}
+
+
+article {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.months a{
+    color: #6EA8FE ;
+    scroll-behavior: smooth;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+ 
