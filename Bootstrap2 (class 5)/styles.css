@@ -1,0 +1,192 @@
+* {
+    scrollbar-width: thin;
+  }
+
+body {
+    overflow-y: overlay;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+   }
+
+.left-annex {
+    color: #2d3b48 !important;
+}
+
+.badge-class {
+    height: 1.5em;
+    width: 2em;
+    margin-left: 4em;
+}
+
+.message-box {
+    background-color: #EFF3FC;
+}
+
+.message-text {
+    font-size: xx-small;
+}
+
+.message-heading {
+    font-size: smaller;
+    font: 0.6em;
+}
+
+.message-img {
+    transform: scale(25);
+}
+
+.notify-icon {
+    float: left;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.person-img {
+   height: 3em;
+   width: 3em;
+}
+
+.navbar-custom {
+    background-color: rgba(0, 30, 255, 0.658);
+}
+
+.dashboard-section {
+    background-color: #eff3f6;
+}
+
+.dashboard-content {
+    color: #707070;
+}
+
+.dashboard-box {
+    background-color: white;
+}
+
+.webcam-img {
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background-color: rgba(43, 73, 226, 0.199);
+}
+
+.graph {
+    background-color: white;
+   
+}
+
+.circle {
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+    background-color: rgba(0, 30, 255, 0.658);
+    
+}
+
+.circle-usa {
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+    background-color: rgb(0, 174, 255);
+}
+
+.circle-london {
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+    background-color: rgba(128, 128, 128, 0.485);
+}
+
+.canda-img-parent {
+    position: relative;
+}
+
+.canda-img {
+    position: absolute;
+    max-width: 100%;
+    transform: translateX(-7em);
+    left: 0;
+    top: 0;
+}
+
+.twitter {
+    background-color: rgba(0, 119, 255, 0.115);
+    height: 12em;
+    width: 25em;
+}
+
+
+.facebook {
+    background-color: rgba(0, 30, 255, 0.658);
+    height: 12em;
+    width: 25em;
+}
+
+.twitter-img {
+    transform: scale(2);
+}
+
+.Tb-section {
+    background-color: white;
+    
+}
+
+.date {
+    font-size: small;
+    color: gray;
+}
+
+.polar-bear-below {
+    background-color: rgba(0, 30, 255, 0.658);
+}
+
+.polar-bear-img {
+    height: 15em;
+    width: 30em;
+}
+
+/* .cloud-sun-img {
+    height: 4em;
+    width: 2em;
+}  */
+
+.new-user-section {
+    overflow-y: scroll;
+    height: 29em;
+}
+
+/* #2D3B48; */
+
+.annex-below {
+    overflow-y: scroll;
+
+    height: 47em;
+} 
+
+
+footer {
+    background-color: #f9f9f9;
+   
+}
+
+
+
+
+/* Hide the default accordion arrow */
+.form::after {
+    display: none !important;
+  }
+
+  .special {
+    justify-content: space-between;
+  }
+  
+   
+ 
