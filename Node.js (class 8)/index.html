@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metacube Parking System</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Metacube Parking System</h1>
+
+        <!-- Employee Registration Section -->
+        <div id="employeeRegistration" class="form-section">
+            <h2>Employee Registration</h2>
+
+            <!-- Name Field -->
+            <div id="nameField" class="form-group">
+                <label for="fullName">Enter your name</label>
+                <input type="text" id="fullName" name="fullName">
+                <div id="nameError" class="error-message"></div>
+            </div>
+
+            <!-- Gender Field (Initially Hidden) -->
+            <div id="genderField" class="form-group hidden">
+                <label id="genderLabel">Select your gender</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="other" name="gender" value="Other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email Field (Initially Hidden) -->
+            <div id="emailField" class="form-group hidden">
+                <label for="email">Enter your email</label>
+                <input type="email" id="email" name="email">
+                <div id="emailError" class="error-message"></div>
+            </div>
+
+            <!-- Password Field (Initially Hidden) -->
+            <div id="passwordField" class="form-group hidden">
+                <label for="password">Create a password</label>
+                <input type="password" id="password" name="password">
+                <div id="passwordStrength"></div>
+                <div id="passwordError" class="error-message"></div>
+            </div>
+
+            <!-- Confirm Password Field (Initially Hidden) -->
+            <div id="confirmPasswordField" class="form-group hidden">
+                <label for="confirmPassword">Confirm your password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+                <div id="confirmPasswordError" class="error-message"></div>
+            </div>
+
+            <!-- Contact Field (Initially Hidden) -->
+            <div id="contactField" class="form-group hidden">
+                <label for="contactNumber">Enter your contact number</label>
+                <input type="tel" id="contactNumber" name="contactNumber">
+                <div id="contactError" class="error-message"></div>
+            </div>
+        </div>
+
+        <!-- Employee Registration Success (Initially Hidden) -->
+        <div id="registrationSuccess" class="form-section hidden">
+            <div class="success-message">
+                Employee registered successfully!
+                <div>Your Employee ID: <span id="employeeId"></span></div>
+            </div>
+        </div>
+
+        <!-- Vehicle Registration Section (Initially Hidden) -->
+        <div id="vehicleRegistration" class="form-section hidden">
+            <h2>Vehicle Registration</h2>
+
+            <!-- Vehicle Name Field -->
+            <div id="vehicleNameField" class="form-group">
+                <label for="vehicleName">Enter vehicle name</label>
+                <input type="text" id="vehicleName" name="vehicleName">
+                <div id="vehicleNameError" class="error-message"></div>
+            </div>
+
+            <!-- Vehicle Type Field (Initially Hidden) -->
+            <div id="vehicleTypeField" class="form-group hidden">
+                <label id="vehicleTypeLabel">Which vehicle do you have?</label>
+                <select id="vehicleType" name="vehicleType">
+                    <option value="">Select vehicle type</option>
+                    <option value="Cycle">Cycle</option>
+                    <option value="MotorCycle">MotorCycle</option>
+                    <option value="FourWheeler">Four Wheeler</option>
+                </select>
+                <div id="vehicleTypeError" class="error-message"></div>
+            </div>
+
+            <!-- Vehicle Number Field (Initially Hidden) -->
+            <div id="vehicleNumberField" class="form-group hidden">
+                <label for="vehicleNumber">Enter vehicle number</label>
+                <input type="text" id="vehicleNumber" name="vehicleNumber">
+                <div id="vehicleNumberError" class="error-message"></div>
+            </div>
+
+            <!-- Employee ID Field (Initially Hidden) -->   
+            <div id="empIdField" class="form-group hidden">
+                <label for="empId">Your Employee ID</label>
+                <input type="text" id="empId" name="empId" readonly>
+            </div>
+
+            <!-- Identification Field (Initially Hidden) -->
+            <div id="identificationField" class="form-group hidden">
+                <label for="identification">Enter identification details</label>
+                <textarea id="identification" name="identification"></textarea>
+                <div id="identificationError" class="error-message"></div>
+            </div>
+        </div>
+
+        <!-- Vehicle Registration Success (Initially Hidden) -->
+        <div id="vehicleSuccess" class="form-section hidden">
+            <div class="success-message">
+                Vehicle registered successfully!
+            </div>
+        </div>
+
+        <!-- Pass Selection Section (Initially Hidden) -->
+        <div id="passSelection" class="form-section hidden">
+            <h2>Select Parking Pass</h2>
+           
+            <div class="currency-selector">
+                <select id="currencySelector">
+                    <option value="INR">INR (₹)</option>
+                    <option value="USD">USD ($)</option>
+                    <option value="YEN">YEN (¥)</option>
+                </select>
+            </div>
+           
+            <div class="pass-options">
+                <div class="pass-option" data-pass-type="daily">
+                    <div class="pass-type">Daily</div>
+                    <div class="pass-price" id="dailyPrice"></div>
+                </div>
+                <div class="pass-option" data-pass-type="monthly">
+                    <div class="pass-type">Monthly</div>
+                    <div class="pass-price" id="monthlyPrice"></div>
+                </div>
+                <div class="pass-option" data-pass-type="yearly">
+                    <div class="pass-type">Yearly</div>
+                    <div class="pass-price" id="yearlyPrice"></div>
+                </div>
+            </div>
+           
+            <div class="form-group" style="margin-top: 20px;">
+                <button id="getPassBtn" disabled>Get Pass</button>
+            </div>
+        </div>
+
+        <!-- Final Pass Summary (Initially Hidden) -->
+        <div id="passSummary" class="form-section hidden">
+            <h2>Your Parking Pass</h2>
+           
+            <div class="pass-summary">
+                <div class="summary-item">
+                    <div>Employee:</div>
+                    <div id="summaryName"></div>
+                </div>
+                <div class="summary-item">
+                    <div>Vehicle:</div>
+                    <div id="summaryVehicle"></div>
+                </div>
+                <div class="summary-item">
+                    <div>Pass Type:</div>
+                    <div id="summaryPassType"></div>
+                </div>
+                <div class="summary-item summary-total">
+                    <div>Total Price:</div>
+                    <div id="summaryPrice"></div>
+                </div>
+                <div class="summary-item">
+                    <div>Currency:</div>
+                    <div id="summaryCurrency"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
