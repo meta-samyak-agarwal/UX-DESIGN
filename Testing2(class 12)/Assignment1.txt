@@ -1,0 +1,106 @@
+Testing 2nd Assignment
+ 
+ 
+ 
+1. Which software development technique is good for the systems that have third party API calls, cron jobs, data exports/imports, etc.,
+
+Ans) The best options are Service-Oriented Architecture (SOA) and        Microservices Architecture.
+    
+
+
+2. Where does Test Automation fit in the Software Life Cycle? Explain with a diagram.
+        
+Ans) It falls under the Software Development Life Cycle (SDLC) Testing Phase as:-
+        
+     Requirements ->  Design -> Development -> Testing(Manual + Automation) -> Deployment
+            
+        
+
+
+3. Can we skip the manual testing and why?
+
+Ans) No, manual testing shouldn't be entirely skip beacuse:
+    -> Human interaction is necessary for explain testing methods sometimes.
+    -> Human judgment is needed for look and feel, usability.
+    -> only stable and repetitive test cases benefit from automation.
+
+
+
+4. Give the names of the selector(locators)?
+Ans)  Selectors / Locators:
+    ->  ID
+    ->  Name
+    ->  Class Name
+    ->  CSS Selector
+    
+
+
+
+5. Describe the Modular Framework.
+
+Ans) The application being tested is divided into distinct modules using a modular testing framework, and test scripts are created separately for each module.
+
+     Benefits:
+    ->  Code reusability
+    
+ 
+
+6. Explain the Open source tool.
+
+Ans) Software that has source code that is openly accessible for use, alteration, and distribution is known as an open source tool.
+
+     Test-related examples include:
+        ->  Web automation with Selenium
+        -> Postman: Testing APIs
+        ->  Frameworks for unit tests: TestNG and JUnit
+        
+        
+
+ 7. What is a Hybrid framework?
+
+Ans) In response, a hybrid testing framework combines two or more frameworks, usually:
+    
+    -> Driven by Data
+    -> Driven by Keywords
+    
+
+
+8. Give the Record and Replay Tool a name.
+    
+Ans) The popular record and replay tool is the Selenium IDE.
+
+
+
+9. What distinguishes Cucumber from BDD?
+
+Ans Behavior Driven Development
+    BDDA cucumber
+    An approach to development
+    An instrument that facilitates BDD
+    emphasizes teamwork while utilizing simple language
+    Gherkin syntax to executable code conversion
+
+
+    In conclusion, Cucumber is a tool that aids in the implementation of BDD, and BDD  is a methodology.
+    `
+    
+
+
+ 10. Can we replace the Manual Regression testing effort from Test automation and how?
+
+    Yes a significant amount of manual regression testing can be replaced by test automation by
+
+    -> Performing repetitive tests in a timely and reliable manner
+    -> Minimizing human error
+    -> In long-term projects, saving time
+
+
+
+11. How many ‘A’s test script has? Explain them.
+
+A test script follows the "AAA Pattern," which consists of three A's:
+    -> Arrange the state of the data  for testing.
+    ->Action - Act on the data through some method that performs an action.
+    -> Assert that the result from acting on that data is what we expect it to be
+
+    This pattern guarantees that tests are clear, understandable, and organized.
