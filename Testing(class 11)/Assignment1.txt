@@ -1,0 +1,290 @@
+1) A) Clarifications 
+
+1. What is the refund amount if a user cancels on the journey date itself.
+
+2.Where exactly should the "Cancel Ticket" button be displayed ?
+
+3.What is the timeframe for processing refunds?
+
+4.What specific information should be included in the cancellation email?
+
+
+1) B) Question for scope of requirements :
+
+1.If a ticket includes multiple services (seat + meal + insurance), does the refund policy apply to all components equally?
+
+2.Do non-refundable or special promotion tickets have different cancellation policies?
+
+
+2) Test Coverage Scenarios:
+
+1. Verify that the "Cancel Ticket" button is displayed for valid future journey dates
+
+2. Verify that the "Cancel Ticket" button is not displayed for past journey dates
+
+3. Verify that the "Cancel Ticket" button is displayed for tickets with journey date same as current date
+
+4. Verify 70% refund when cancellation is done exactly 60 days before journey
+
+5. Verify 70% refund when cancellation is done more than 60 days before journey
+
+6. Verify 50% refund when cancellation is done exactly 30 days before journey
+
+7. Verify 50% refund when cancellation is done between 30-60 days before journey
+
+8. Verify 35% refund when cancellation is done exactly 10 days before journey
+
+9. Verify 35% refund when cancellation is done between 10-30 days before journey
+
+10.Verify 20% refund when cancellation is done exactly 1 day before journey
+
+11. Verify 20% refund when cancellation is done between 1-10 days before journey
+
+************
+12. Verify refund calculation for tickets with various pricing (discount tickets, premium tickets, etc.)
+
+
+13. Verify cancellation for multiple tickets in a single booking
+
+14.Verify cancellation refund payment method
+
+15. Verify email is sent after successful cancellation
+
+16. Verify email content includes correct ticket details
+
+17. Verify email content includes correct refund amount and percentage
+
+18. Verify email delivery to correct address
+
+19. Verify correct day calculation at boundary times (midnight)
+
+20. Verify only authorized users can cancel tickets
+
+21. Verify unauthorized access attempts are blocked and logged
+
+
+
+
+
+
+3) Test Cases for Refund Amount Calculations:
+
+ Test Case 1: Cancellation ≥ 60 Days Prior (70% Refund)
+
+   Test Case 1.1
+    Description: Verify 70% refund when cancelling exactly 60 days before  journey   
+    Preconditions: 
+    - User has a valid ticket booking
+    - Current date is exactly 60 days before journey date  
+
+Test Steps:
+1. Login to the system
+2. Navigate to ticket details
+3. Click on "Cancel Ticket" button
+4. Confirm cancellation
+
+Expected Results:
+Ticket is successfully cancelled
+70% of the ticket amount is refunded
+Confirmation email is sent with correct refund details
+
+ Test Case 1.2
+    Description: Verify 70% refund when cancelling more than 60 days before journey  
+    Preconditions: 
+    - User has a valid ticket booking
+    - Current date is 90 days before journey date  
+
+    Test Steps:
+        Same as above
+
+
+    Expected Results:
+        Same as above
+        
+        
+
+
+
+
+
+Test Suite 2: Cancellation Between 30-60 Days Prior (50% Refund)
+
+    Test Case 2.1
+    
+    Description: Verify 50% refund when cancelling exactly 30 days before journey  
+    Preconditions: 
+    - User has a valid ticket booking
+    - Current date is exactly 30 days before journey date  
+
+    Test Steps:
+        same as above
+
+    Expected Results:
+    - Ticket is successfully cancelled
+    - 50% of the ticket amount is refunded
+    - Confirmation email is sent with correct refund details
+
+
+
+Test Case 2.2
+    Description: Verify 50% refund when cancelling 45 days before journey  
+    Preconditions :
+    - User has a valid ticket booking
+    - Current date is 45 days before journey date  
+
+Test Steps:
+    Same as above
+
+Expected Results:
+Ticket is successfully cancelled
+50% of the ticket amount is refunded
+Confirmation email is sent with correct refund details
+
+
+
+Test Case 2.3
+    Description: Verify 50% refund when cancelling exactly 59 days before journey  
+    Preconditions: 
+    - User has a valid ticket booking
+    - Current date is exactly 59 days before journey date  
+
+Test Steps:
+    Same as above
+    
+    
+Expected Results:
+    Same as above
+    
+    
+
+Test Suite 3: Cancellation Between 10-30 Days Prior (35% Refund)
+
+Test Case 3.1
+    Description: Verify 35% refund when cancelling exactly 10 days before journey  
+    Preconditions: 
+    - User has a valid ticket booking
+    - Current date is exactly 10 days before journey date  
+
+Test Steps:
+    Same as above
+
+Expected Results:
+Ticket is successfully cancelled
+35% of the ticket amount is refunded
+Confirmation email is sent with correct refund details
+
+Test Case 3.2
+    Description: Verify 35% refund when cancelling 20 days before journey  
+    Preconditions: 
+    - User has a valid ticket booking
+    - Current date is 20 days before journey date  
+
+Test Steps:
+    'Same as above
+
+Expected Results:
+    Same as above
+    
+    
+
+Test Case 3.3
+    Description: Verify 35% refund when cancelling exactly 29 days before journey  
+    Preconditions: 
+    - User has a valid ticket booking
+    - Current date is exactly 29 days before journey date  
+
+Test Steps:
+    Same as above
+
+Expected Results:
+Same as above
+
+
+Test Suite 4: Cancellation Between 1-10 Days Prior (20% Refund)
+
+Test Case 4.1
+Description: Verify 20% refund when cancelling exactly 1 day before journey  
+Preconditions: 
+User has a valid ticket booking
+Current date is exactly 1 day before journey date  
+
+Test Steps:
+    Same as above
+
+Expected Results:
+Ticket is successfully cancelled
+20% of the ticket amount is refunded
+Confirmation email is sent with correct refund details
+
+
+ Test Case 4.2
+    Description: Verify 20% refund when cancelling 5 days before journey  
+    Preconditions: 
+    - User has a valid ticket booking
+    - Current date is 5 days before journey date  
+
+Test Steps:
+    Same as above
+
+Expected Results:
+    Same as above
+    
+    
+
+Test Case 4.3
+    Description: Verify 20% refund when cancelling exactly 9 days before journey  
+    Preconditions: 
+    - User has a valid ticket booking
+    - Current date is exactly 9 days before journey date  
+
+Test Steps:
+    Same as above
+
+Expected Results:
+    Same as above
+    
+    
+
+
+
+Boundary value analysis:
+
+ Test Data Generation
+
+    4.a) Boundary Value Analysis
+
+Boundary Value Analysis focuses on testing at the boundaries of input domains, including the extreme edges of valid inputs.
+
+Table 1: Boundary Value Analysis for Days Before Journey
+
+ Days Before Journey , Boundary Description ,Expected Refund Percentage 
+
+ 61                   Just above 60 days        70%                     
+ 60                   Exactly 60 days           70%                     
+ 59                   Just below 60 days        50%                     
+ 31                   Just above 30 days        50%                     
+ 30                   Exactly 30 days           50%                     
+ 29                   Just below 30 days        35%                     
+ 11                  Just above 10 days        35%                     
+ 10                   Exactly 10 days           35%                     
+  9                    Just below 10 days      20%                     
+  2                    Just above 1 day       20%                     
+  1                   Exactly 1 day             20%                     
+  0                    Journey day            nil
+
+
+
+ 4.b) Equivalence Partitioning
+
+Equivalence Partitioning divides input data into classes where all elements are expected to behave the same way.
+
+Table 3: Equivalence Partitioning for Days Before Journey
+
+ Partition ID , Partition Description , Representative Value , Expected Refund Percentage 
+
+ EP-1         More than 60 days      75                   70%                     
+ EP-2         Between 30-60 days     45                   50%                     
+ EP-3         Between 10-30 days     20                   35%                     
+ EP-4         Between 1-10 days      5                    20%                     
+ EP-5         0 days or past dates   0                    nil 
+ EP-6         Invalid dates (future booking date)  Current date < booking date  No cancellation possible

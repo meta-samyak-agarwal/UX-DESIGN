@@ -1,0 +1,15 @@
+  
+Assignment 2
+
+Decision Table for Discounts in ABC Company
+
+Order Type    Wholesale        COD Payment  	>= 50 Units                   Discount Applied
+
+  Case 1                   No                        No            	    No             	        0%
+  Case 2                   No                       Yes           	    No              		2%
+  Case 3                   No                       No                  	   Yes             		2%
+  Case 4                   No                      Yes           	   Yes            		 4%
+  Case 5                 Yes                      No           	       No              		2%
+  Case 6                 Yes                      Yes          	    No              		4%
+  Case 7                 Yes                     No           		   Yes             		4%
+  Case 8                 Yes                    Yes           	  Yes            		 6%
