@@ -1,106 +1,153 @@
-Testing 2nd Assignment
- 
- 
- 
-1. Which software development technique is good for the systems that have third party API calls, cron jobs, data exports/imports, etc.,
+1. Which software development technique is good for systems with third-party API calls, cron jobs, data exports/imports?
 
-Ans) The best options are Service-Oriented Architecture (SOA) and        Microservices Architecture.
-    
+Answer:--> Microservices Architecture is ideal for systems involving third-party API calls(like google map API) , cron jobs(automaritc sednig the daily reports ) , data exports/imports(uploading and dowanloading the cv) . Each service is developed, tested, and deployed independently. Advantages include:
 
+Scalability: Services like data exports or cron jobs can scale independently.
+
+Isolation: Failure in one service doesn’t bring down the entire system like for examole if the API calling service is down by any chance then the whole system won't break.
+
+
+
+**********************************
 
 2. Where does Test Automation fit in the Software Life Cycle? Explain with a diagram.
-        
-Ans) It falls under the Software Development Life Cycle (SDLC) Testing Phase as:-
-        
-     Requirements ->  Design -> Development -> Testing(Manual + Automation) -> Deployment
-            
-        
 
+Answer:
+Test Automation fits primarily in the Testing phase of the Software Development Life Cycle (SDLC.
+
+ Requirements ->  Design -> Development -> Testing(Manual + Automation) -> Deployment.
+
+
+
+**********************************
 
 3. Can we skip the manual testing and why?
 
-Ans) No, manual testing shouldn't be entirely skip beacuse:
-    -> Human interaction is necessary for explain testing methods sometimes.
-    -> Human judgment is needed for look and feel, usability.
-    -> only stable and repetitive test cases benefit from automation.
+Answer: No, manual testing should not be completely skipped because:
 
+A) It helps in exploratory testing, where human intuition is valuable for example , if clicking the button to check whether the app crashes at that timecan be done manually.
+
+b) if the UI changes by any chnge in sceen size , then the automated test cases may fail , there we need the manual testing.
+
+c) the automated testing is helpful if the program has some repeating testing , but if the program to test ahs different function to test , then istead of wasting the scripts for the automated test case is more time consuming than , doing it manually.
+
+
+**********************************
 
 
 4. Give the names of the selector(locators)?
-Ans)  Selectors / Locators:
-    ->  ID
-    ->  Name
-    ->  Class Name
-    ->  CSS Selector
-    
+
+Answer: Common locators in automation tools are:
+
+a) ID
+b) Name
+c) Class Name
+d) Tag Name
+e) Link Text
+f) CSS Selector
 
 
 
-5. Describe the Modular Framework.
-
-Ans) The application being tested is divided into distinct modules using a modular testing framework, and test scripts are created separately for each module.
-
-     Benefits:
-    ->  Code reusability
-    
- 
-
-6. Explain the Open source tool.
-
-Ans) Software that has source code that is openly accessible for use, alteration, and distribution is known as an open source tool.
-
-     Test-related examples include:
-        ->  Web automation with Selenium
-        -> Postman: Testing APIs
-        ->  Frameworks for unit tests: TestNG and JUnit
-        
-        
-
- 7. What is a Hybrid framework?
-
-Ans) In response, a hybrid testing framework combines two or more frameworks, usually:
-    
-    -> Driven by Data
-    -> Driven by Keywords
-    
+**********************************
 
 
-8. Give the Record and Replay Tool a name.
-    
-Ans) The popular record and replay tool is the Selenium IDE.
+5. What is the modular framework?
+
+Answer:
+A Modular Testing Framework divides the test cases into separate modules or functions. Each module represents a specific part of the application.
+
+Benefits:
+
+Code reusability
+
+Easy maintenance
+
+Clear structure
+
+
+Example: Login, Search, Checkout as separate test modules.
+
+
+**********************************
 
 
 
-9. What distinguishes Cucumber from BDD?
+6. Explain the Open Source Tool.
 
-Ans Behavior Driven Development
-    BDDA cucumber
-    An approach to development
-    An instrument that facilitates BDD
-    emphasizes teamwork while utilizing simple language
-    Gherkin syntax to executable code conversion
+Answer: An open-source tool is software with publicly available source code that users can modify and distribute.
+
+Example: Postman -> Supports multiple languages (Java, Python, etc.) having Community-support and not having and licence cost.
 
 
-    In conclusion, Cucumber is a tool that aids in the implementation of BDD, and BDD  is a methodology.
-    `
-    
+**********************************
 
 
- 10. Can we replace the Manual Regression testing effort from Test automation and how?
+7. What is a Hybrid framework?
 
-    Yes a significant amount of manual regression testing can be replaced by test automation by
+Answer:
+A Hybrid Framework is a combination of multiple frameworks like:
 
-    -> Performing repetitive tests in a timely and reliable manner
-    -> Minimizing human error
-    -> In long-term projects, saving time
+Modular Framework ( divide test cases into reusable components)
+         +
+Keyword-Driven Framework (keyinputs like enter , click etc)
 
+
+
+**********************************
+
+
+8. Write a name of record and replay tool.
+
+Answer:
+Selenium IDE is a record and replay tool.(first we record the user actions on application and then reply them to run the test automatically)
+
+Records user actions in the browser
+
+Generates test scripts automatically
+
+Ideal for beginners and quick test cases
+
+
+
+**********************************
+
+
+9. What is the difference between BDD and Cucumber?
+
+Answer:
+
+BDD (Behavior Driven Development) -> test cases are written in normal English lang, this "this that" so that other ppl can also understand it.
+
+Cucumber is a automation tool that supports the BDD.
+
+
+**********************************
+
+
+10. Can we replace the Manual Regression testing effort from Test automation and how?
+
+Answer:
+Yes, test automation is ideal for regression testing(it checks that existing functionality still works after new change made to the code, like login button to check whether it is not broken) because:
+
+Tests are repeated frequently.
+
+Automation saves time and effort.
+
+It ensures consistency and faster feedback.
+
+
+
+**********************************
 
 
 11. How many ‘A’s test script has? Explain them.
 
-A test script follows the "AAA Pattern," which consists of three A's:
-    -> Arrange the state of the data  for testing.
-    ->Action - Act on the data through some method that performs an action.
-    -> Assert that the result from acting on that data is what we expect it to be
+Answer:
+Test scripts follow the 3 A’s:
 
-    This pattern guarantees that tests are clear, understandable, and organized.
+1. Arrange: Set up the test environment and test data.
+2. Act: Perform the actual action or input.
+3. Assert: Check the outcome with expected results.
+
+
+
